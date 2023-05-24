@@ -1,0 +1,61 @@
+@media (min-width: 576px) {
+  .about-ems {
+    &__benefits {
+      &-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+		margin: 0.8rem;
+
+        &-item {
+          flex-direction: column;
+        }
+
+		&-text {
+			font-size: 1.4rem;
+		}
+
+        &-icon {
+			font-size: 5.8rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+
+	.about-us {
+		&__box {
+			width: 450px;
+			height: 700px;
+
+			&-img {
+				&--one {
+					&::before {
+						top: 602px;
+						font-size: 2rem;
+					}
+				}
+
+				&--two {
+					&::before {
+						top: 602px;
+						font-size: 2rem;
+					}
+				}
+			}
+
+
+		}
+	}
+}
+
+@media (max-height: 420px) {
+	.nav {
+		&__mobile {
+			&-item {
+				font-size: 1.4rem;
+			}
+		}
+	}
+}

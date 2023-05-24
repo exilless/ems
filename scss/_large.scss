@@ -1,0 +1,261 @@
+@media (min-width: 992px) {
+	.section-title {
+		padding: 6rem 0 3rem;
+	}
+
+	.header {
+		&__arrow {
+			z-index: 1000;
+			&-link {
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		&__img {
+			&-text {
+				position: relative;
+				bottom: 40px;
+				&--company-logo {
+					position: relative;
+					background-image: url('../img/ico/Asset\ 45.svg');
+				}
+
+				&--paragraph {
+					font-size: 3.2rem;
+				}
+			}
+		}
+	}
+	.nav {
+		&__desktop {
+			position: fixed;
+			height: 60px;
+			max-width: 1200px;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			text-transform: uppercase;
+			text-decoration: none;
+			z-index: 1000;
+
+			&--right {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				align-items: center;
+			}
+		}
+
+		&-item {
+			margin: 0 30px;
+
+			font-size: 2.2rem;
+
+			&:hover {
+				color: $dark-gold;
+			}
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: '';
+				width: 100%;
+				height: 100%;
+				border: 1px solid black;
+				opacity: 0;
+			}
+
+			&:hover::before {
+				animation: pulse 1s;
+			}
+
+			&-home {
+				display: flex;
+				justify-content: center;
+				padding: 0.5rem;
+				opacity: 0.3;
+				margin: 0 30px;
+
+				&-active {
+					animation: comeIn 1s;
+					animation-direction: alternate;
+					animation-fill-mode: both;
+				}
+
+				&-img {
+					position: relative;
+					top: 5px;
+					width: 70px;
+					transition: transform 0.3s;
+					opacity: 1;
+
+					&:hover {
+						transform: scale(1.1);
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		&-background {
+			display: block;
+		}
+	}
+	.hamburger {
+		display: none;
+	}
+
+	.about-ems {
+		&-info {
+			&__box {
+				&-img {
+					object-fit: cover;
+					height: 300px;
+				}
+
+				&-title {
+					font-size: 2.6rem;
+				}
+
+				&-text {
+					font-size: 1.6rem;
+				}
+			}
+		}
+		&__benefits {
+			&-box {
+				margin-bottom: 3em;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-gap: 2rem;
+
+				&-icon {
+					font-size: 5rem;
+				}
+				&-text {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+
+	//about-us
+
+	.about-us {
+		&__background {
+			background-image: url('../img/miha_bodytec_004.png');
+		}
+
+		display: flex;
+		flex-direction: row;
+		&__box {
+			width: 450px;
+			height: 700px;
+
+			&-img {
+				&--one {
+					&::before {
+						top: 602px;
+						font-size: 2rem;
+					}
+				}
+
+				&--two {
+					&::before {
+						top: 602px;
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	.prices {
+		&-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+
+			&__box {
+				&:hover {
+					scale: 1.05;
+				}
+			}
+		}
+
+		&-promotions {
+			&__box {
+				&:hover {
+					scale: 1.05;
+				}
+
+				// &-title {
+				// 	padding-top: 4rem;
+				// 	font-size: 2.2rem;
+				// }
+			}
+		}
+	}
+
+	.contact {
+		&__box {
+			position: relative;
+			padding: 4rem 0 0;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+
+			&-one {
+				grid-column: 1/2;
+				grid-row: 2/3;
+			}
+
+			&-two {
+				grid-column: 2/3;
+				grid-row: 1/2;
+			}
+
+			&-three {
+				grid-column: 3/4;
+				grid-row: 2/3;
+			}
+
+			&-four {
+				grid-column: 2/3;
+				grid-row: 3/4;
+				padding-bottom: 0;
+				top: -50px;
+			}
+
+			&-one,
+			&-three,
+			&-four {
+				position: relative;
+				top: -40px;
+			}
+
+			&-title {
+				font-size: 2rem;
+			}
+
+			&-icon {
+				font-size: 2rem;
+
+				&--two {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}
+//about EMS
+
+// .about-ems-info {
+// 	&__box {
+// 		&-img {
+// 			width: 500px;
+// 			height: 100%;
+// 		}
+// 	}
+// }
